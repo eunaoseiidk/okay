@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="oroboros.piskel" type="image.piskel"> 
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Quitanda da Tia Aline</h1>
+            <p>O seu Portal de frutas </p>
+        </div>
+        </header>
+        <main>
+            <div class="fruta">
+            <h2>laranja</h2>
+            <p>fruta citrica laranja</p>
+            <p>Preço: R$ 9,90</p>
+            <button class="btn-comprar"onclick="addToCart('Laranja ,29,90')">Comprar</button></div>
+            <div class="fruta">
+                <h2>maçã</h2>
+                <p>fruta doced com casca vermelha</p>
+                <p>Preço: R$ 4,90</p>
+                <button class="btn-comprar"onclick="addToCart('Maçã ,34,90')">Comprar</button>
+            </div>
+            <div class="fruta">
+                <h2>uva</h2>
+                <p>fruta roxa que vem em conjunto</p>
+                <p>Preço: R$ 2,17</p>
+                 <button class="btn-comprar"onclick="addToCart('Uva,20,17')">Comprar</button>
+            </div>
+
+        </main>
+   <!-- ÍCONE DO CARRINHO -->
+  <div class="floating-cart" id="cart-icon" onclick="toggleCart()">
+    🛒
+    <span class="cart-count" id="cart-count">0</span>
+  </div>
+
+  <!-- PAINEL DO CARRINHO -->
+  <div class="cart-panel" id="cart-panel">
+    <h3>🛒 Seu Carrinho</h3>
+    <div class="cart-items" id="cart-items">
+      <p>O carrinho está vazio.</p>
+    </div>
+    <div class="cart-buttons">
+      <button class="continue-btn" onclick="toggleCart()">Continuar Comprando</button>
+      <button class="checkout-btn" onclick="window.location.href='finalizar.html'">Finalizar Compra</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
